@@ -3,25 +3,26 @@
 
 using namespace std;
 
-class Question{
-    private:
-        string QuestionName;
-        vector<string> question;
-        char Anwser;
-    public:
-        Question(string QuestionName, vector<string> question, char Anwser) {
-            this->QuestionName = QuestionName;
-            this->question = question;
-            this->Anwser = Anwser;
-        }
+//In-Progress
+//class Question{
+    //private:
+        //string QuestionName;
+        //vector<string> question;
+        //char Anwser;
+    //public:
+        //Question(string QuestionName, vector<string> question, char Anwser) {
+            //this->QuestionName = QuestionName;
+            //this->question = question;
+            //this->Anwser = Anwser;
+        //}
 
-        string PrintQuestion(string question) {
-            for(auto& opt : question){
-                char letter = 'A';
-                cout << letter << "." << opt << "\n";
-                letter++;
-            }
-        }
+        //string PrintQuestion(string question) {
+            //for(auto& opt : question){
+                //char letter = 'A';
+                //cout << letter << "." << opt << "\n";
+                //letter++;
+            //}
+        //}
 
         // void CheckAnwser(char UserInput){
         //     for(int i = 0; i < 3; i++){
@@ -29,20 +30,22 @@ class Question{
         // }
         // }
 
-};
+//};
 
-class Quiz{
-    private:
-        string name;
-        vector<Question> questions;
-    public:
-        string GetName() {
-            return name;
-        }
+//class Quiz{
+    //private:
+        //string name;
+        //vector<Question> questions;
+    //public:
+        //string GetName() {
+            //return name;
+        //}
 
         
 
-};
+//};
+
+//Working Code
 
 int main() {
     string QuizQuestions[] = {
@@ -80,4 +83,5 @@ int main() {
     cout << "Ilosc wszystkich pytan: " << allquestions << "\n";
     cout << "Poprawne odpowiedzi: " << score << "\n";
     cout << "Procenty: " << ((double)score / (double)allquestions) *  100 << "%\n";
+
 }
